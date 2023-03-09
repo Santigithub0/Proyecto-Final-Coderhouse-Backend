@@ -1,1 +1,11 @@
-[{"title":"Wilson Pro Staff 97","description":"Roger Federer's raquet","price":250,"thumbnail":"image1","code":"abc123","stock":20,"id":"o6zr1dW_SvF8GLekW-tx7"},{"title":"Babolat Aero Drive","description":"Rafael Nadal's raquet","price":230,"thumbnail":"image2","code":"abc124","stock":19,"id":"O6gtETkq7JTcS-4eH6sAh"},{"title":"Head Speed Mp","description":"Novak Djokovic's raquet","price":210,"thumbnail":"image3","code":"abc125","stock":15,"id":"baUA8JKJle3dTL91_fYgk"},{"title":"Wilson Blade","description":"Stefanos tsitsipas' raquet","price":240,"thumbnail":"image4","code":"abc126","stock":12,"id":"o76X771DKcXE3ZNjN60We"},{"title":"Babolat Pure Drive","description":"Carlos Alcaraz's raquet","price":230,"thumbnail":"image5","code":"abc127","stock":16,"id":"6bZQre-kEG5t8KWnGgVmO"},{"title":"Head Extreme","description":"Mateo Berretini's raquet","price":200,"thumbnail":"image6","code":"abc128","stock":8,"id":"BvbvuFCz8RcCLan02rU6Q"},{"title":"Wilson Ultra","description":"Gael Monfils' raquet","price":225,"thumbnail":"image7","code":"abc129","stock":10,"id":"OdKIapQPWXCXXfu9tGujg"},{"title":"Babolat Pure Strike","description":"Dominic Thiem's raquet","price":220,"thumbnail":"image8","code":"abc130","stock":11,"id":"NWXR0GF0JdMZI4zUcEb32"},{"title":"Head Radical","description":"Alexandr Zverev's raquet","price":215,"thumbnail":"image9","code":"abc131","stock":9,"id":"q6bc9Ppt9nUzItQAfVGVa"},{"title":"Wilson Burn","description":"David Goffin's raquet","price":200,"thumbnail":"image10","code":"abc132","stock":7,"id":"jE39qUadGhlC4Pinv09vM"}]
+[
+    {
+        "id": "aa36cab2-21c9-47b6-af8f-5e7998de9ec4",
+        "title": "Wilson Pro Staff 97",
+        "description": "Roger Federer's raquet",
+        "code": "123",
+        "stock": "50",
+        "category": "Raquets",
+        "price": "299"
+    }
+]

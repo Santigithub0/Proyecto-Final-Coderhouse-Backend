@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  {{#if products}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+        <th scope="col">Code</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each products}}
+      <tr>
+        <th scope="row">{{@index}}</th>
+        <th scope="row">{{this.title}}</th>
+        <td>{{this.description}}</td>
+        <td>{{this.thumbnail}}</td>
+        <td>{{this.code}}</td>
+        <td>{{this.stock}}</td>
+        <td>{{this.category}}</td>
+        <td>${{this.price}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+  <h1 class="text-center">Empty list</h1>
+  {{/if}}
+</div>

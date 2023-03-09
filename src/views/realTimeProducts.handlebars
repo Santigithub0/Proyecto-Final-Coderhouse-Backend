@@ -1,0 +1,23 @@
+<div id="realtime-products" class="container">
+  <h1 class="text-center text-success my-2" style="font-family: 'Roboto', sans-serif; font-weight: 600;">Add Product</h1>
+  
+  <form id="form" class="form col-md-12 text-center" action="/api/products" method="POST">
+    <input class="form-control mb-3" type="text" id="title" placeholder="Title" />
+    <input class="form-control mb-3" type="text" id="description" placeholder="Description" />
+    <input class="form-control mb-3" type="text" id="code" placeholder="Code" />
+    <input class="form-control mb-3" type="text" id="stock" placeholder="Stock" />
+    <input class="form-control mb-3" type="text" id="category" placeholder="Category" />
+    <input class="form-control mb-3" type="text" id="price" placeholder="Price" />
+
+    <div class="d-flex justify-content-center">
+      <button id="submit" class="btn btn-success">Send</button>
+    </div>
+  </form>
+  
+  <hr class="my-4" />
+
+  <div id="cards-container" class="mt-4 d-flex align-items-center gap-4 flex-wrap"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/script.js"></script>
