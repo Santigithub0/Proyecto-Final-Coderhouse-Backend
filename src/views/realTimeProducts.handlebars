@@ -1,18 +1,32 @@
 <div id="realtime-products" class="container">
 
   <form id="form" class="form col-md-12 text-center" action="/api/products" method="POST">
-    <label for="title" class="d-flex justify-content-start titles">Title</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="title"/>
+    <div class="row">
+      <div class="col-md-4">
+        <label for="title" class="d-flex justify-content-start titles">Title</label>
+        <input class="form-control mb-3 bg-danger border-dark" type="text" id="title" />
+      </div>
+      <div class="col-md-4">
+        <label for="code" class="d-flex justify-content-start titles">Code</label>
+        <input class="form-control mb-3 bg-danger border-dark" type="text" id="code" />
+      </div>
+      <div class="col-md-4">
+        <label for="stock" class="d-flex justify-content-start titles">Stock</label>
+        <input class="form-control mb-3 bg-danger border-dark" type="text" id="stock" />
+      </div>
+    </div>
     <label for="description" class="d-flex justify-content-start titles">Description</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="description"/>
-    <label for="code" class="d-flex justify-content-start titles">Code</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="code"/>
-    <label for="stock" class="d-flex justify-content-start titles">Stock</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="stock"/>
-    <label for="category" class="d-flex justify-content-start titles">Category</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="category"/>
-    <label for="price" class="d-flex justify-content-start titles">Price</label>
-    <input class="form-control mb-3 bg-danger border-dark" type="text" id="price"/>
+    <input class="form-control mb-3 bg-danger border-dark" type="text" id="description" />
+    <div class="row">
+      <div class="col-md-6">
+        <label for="category" class="d-flex justify-content-start titles">Category</label>
+        <input class="form-control mb-3 bg-danger border-dark" type="text" id="category" />
+      </div>
+      <div class="col-md-6">
+        <label for="price" class="d-flex justify-content-start titles">Price</label>
+        <input class="form-control mb-3 bg-danger border-dark" type="text" id="price" />
+      </div>
+    </div>
 
     <div class="d-flex justify-content-center boton">
       <button id="submit" class="btn btn-dark send">Send</button>
@@ -21,7 +35,7 @@
 
   <hr class="my-4" />
 
-  <div id="cards-container" class="mt-4 d-flex align-items-center gap-4 flex-wrap"></div>
+  <div id="cards" class="mt-4 d-flex align-items-center gap-4 flex-wrap"></div>
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
