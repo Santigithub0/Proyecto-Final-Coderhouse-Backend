@@ -13,3 +13,19 @@ body{
 .nav-item{
     font-size: 30px;
 }
+
+.titles{
+    font-weight: bold;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.boton{
+    margin-top: 50px;
+}
+
+.send{
+    font-size: 35px;
+}

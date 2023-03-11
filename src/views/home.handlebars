@@ -1,6 +1,6 @@
 <div class="container mt-4">
   {{#if products}}
-  <table class="table">
+  <table class="table table-dark">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -13,11 +13,11 @@
         <th scope="col">Price</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody class="table-group-divider">
       {{#each products}}
       <tr>
-        <th scope="row">{{@index}}</th>
-        <th scope="row">{{this.title}}</th>
+        <th>.</th>
+        <th>{{this.title}}</th>
         <td>{{this.description}}</td>
         <td>{{this.thumbnail}}</td>
         <td>{{this.code}}</td>

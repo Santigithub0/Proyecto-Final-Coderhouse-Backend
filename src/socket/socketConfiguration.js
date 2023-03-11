@@ -9,15 +9,15 @@ const socketConfiguraton = (httpServer) => {
     io.on("connection", async (socket) => {
         console.log(`user connected: ${socket.id}`);
 
-        const products = await filemanager.getData();
+        const products = await filemanager.getProducts();
 
         socket.emit("newProduct", products);
 
         socket.on("addProduct", async (product) => {
 
-            await filemanager.postData(product);
+            await filemanager.addProducts(product);
 
-            const products = await filemanager.getData();
+            const products = await filemanager.getProducts();
 
             io.sockets.emit("newProduct", products);
 
@@ -26,9 +26,9 @@ const socketConfiguraton = (httpServer) => {
 
         socket.on("deleteProduct", async (id) => {
 
-            await filemanager.deleteDataById(id);
+            await filemanager.deleteProducts(id);
 
-            const products = await filemanager.getData();
+            const products = await filemanager.getProducts();
 
             io.sockets.emit("newProduct", products);
 

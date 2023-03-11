@@ -5,6 +5,7 @@ import fileDirName from "./utils/fileDirName.js";
 import handlebars from "express-handlebars";
 import * as path from "path";
 import ProductManager from "./controllers/ProductManager.js";
+import socketConfiguration from "./socket/socketConfiguration.js";
 
 const app = express();
 
@@ -22,14 +23,14 @@ app.get("/", async (req, res) => {
     const allProducts = await product.getProducts();
     res.render("home", {
         title: "Slam Tennis",
-        products: allProducts
+        products: allProducts,
     });
 });
 
 app.get("/realtimeproducts", async (req, res) => {
     try {
         res.render("realtimeproducts", {
-            title: "Realtime Products",
+            title: "Slam Tennis",
         });
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -41,6 +42,8 @@ app.use("/api/cart", cartRouter);
 app.use(express.static(__dirname + '/public'));
 
 const Port = 8080;
-app.listen(Port, () => {
+const httpServer = app.listen(Port, () => {
     console.log(`Santi's Server ${Port}`);
 });
+
+socketConfiguration(httpServer);
